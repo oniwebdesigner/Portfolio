@@ -1,6 +1,7 @@
 import React from 'react'
 import SocialMediaButton from './common/SocialMediaButton'
-import Boy from '../images/logo/boy.png';
+import Boy from '../images/logo/boy.png'
+
 
 export default function HeroSection() {
   return (
