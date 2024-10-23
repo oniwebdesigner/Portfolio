@@ -3,14 +3,15 @@ import SocialMediaButton from './common/SocialMediaButton'
 import Boy from '../images/logo/boy.png'
 
 
+
 export default function HeroSection() {
   return (
     <div className="flex flex-row items-center justify-center p-8">
       {/* Text Section */}
       <div className="w-1/2 text-left">
-        <h2 className='text-base'>Hi, my name is</h2>
-        <h1 className='text-4xl font-bold'>Oni</h1>
-        <p className='text-lg mt-4'>This is a short paragraph introducing the hero section.</p>
+        <h2 className='text-[1.65rem] font-medium md:max-w-lg w-full mt-2 staggered-reveal'>Hi, my name is</h2>
+        <h1 className='text-6xl mt-2 font-medium text-purple-950 w-fit staggered-reveal'>Oni</h1>
+        <p className='text-[1.65rem] font-medium md:max-w-lg w-full mt-2 staggered-reveal'>This is a short paragraph introducing the hero section.</p>
 
         {/* Social Media Buttons */}
         <div className='flex flex-row gap-4 mt-6'>
@@ -26,7 +27,7 @@ export default function HeroSection() {
         </div>
 
         {/* Button */}
-        <button className='mt-8 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition'>
+        <button className='mt-8 px-4 py-2 border border-purple-950 rounded-lg text-purple-950 hover:bg-purple-950  hover:text-white transition'>
           Let's go
         </button>
       </div>
