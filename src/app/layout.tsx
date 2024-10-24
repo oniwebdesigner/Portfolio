@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import FooterElements from "./components/layout/FooterElements";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,13 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div className="px-16">
-          <Navbar />
-          {children}
+        <Navbar />
+        {children}
+        <Footer />
+        <div className="p-16 text-center text-4xl">
+        <FooterElements></FooterElements>
         </div>
-      <Footer/> 
       </body>
     </html>
   );

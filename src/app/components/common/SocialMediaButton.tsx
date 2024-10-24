@@ -1,12 +1,15 @@
-import React, { ReactElement } from 'react'
+import { ReactElement, ReactNode } from 'react';
 
-type Props  = {
-    href: string,
-    children: ReactElement|string
-}
+type Props = {
+  href: string;
+  children?: ReactNode;
+  
+};
 
 export default function SocialMediaButton(props: Props) {
   return (
-    <a href={props.href}>{props.children}</a>
-  )
+    <a href={props.href}>
+      <span>{props.children}</span> {/* Këtu bashkon children në një element */}
+    </a>
+  );
 }
