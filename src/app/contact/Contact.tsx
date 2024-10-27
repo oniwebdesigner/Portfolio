@@ -1,5 +1,4 @@
-// src/components/ContactForm.tsx
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 
@@ -8,41 +7,52 @@ const ContactForm: React.FC = () => {
   const [focusEmail, setFocusEmail] = useState(false);
   const [focusMessage, setFocusMessage] = useState(false);
 
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message,setMessage] = useState('')
+
   return (
     <div className="flex flex-col items-center justify-center w-full h-auto p-8">
       <form className="w-full max-w-3xl p-8 shadow-md rounded-lg space-y-6">
-        
         <div className="relative w-full">
           <input
             type="text"
             id="name"
             name="name"
+            value={name}
+            onChange={(e) => setName((e.target! as HTMLInputElement).value)}
             placeholder=" "
             onFocus={() => setFocusName(true)}
             onBlur={() => setFocusName(false)}
-            className={`w-full p-3 mb-5 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 placeholder-transparent text-xl bg-transparent border-purple-800 hover:shadow-lg hover:border-purple-600 transition duration-200`}
+            className="w-full p-3 mb-5 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 placeholder-transparent text-xl bg-transparent border-purple-800 hover:shadow-lg hover:border-purple-600 transition duration-200"
             style={{ fontFamily: 'Anton' }}
           />
           <label
-            className={`absolute left-3 transition-all duration-200 transform ${focusName ? 'translate-y-[-1.5rem] scale-75 text-purple-800' : 'top-3 text-white text-lg'}`}  
+            htmlFor="name"
+            className={`absolute left-3 transition-all duration-200 transform ${
+              name || focusName ? '-translate-y-7 text-purple-800' : 'top-3 text-white text-lg'
+            }`}
           >
             Name
           </label>
         </div>
-
         <div className="relative w-full mb-4">
           <input
             type="email"
             id="email"
             name="email"
             placeholder=" "
+            onChange={(e) => setEmail(e.target.value)}
             onFocus={() => setFocusEmail(true)}
             onBlur={() => setFocusEmail(false)}
-            className={`w-full p-3 mb-5 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 placeholder-transparent text-xl bg-transparent border-purple-900 hover:shadow-lg hover:border-purple-600 transition duration-200`}
+            className="w-full p-3 mb-5 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 placeholder-transparent text-xl bg-transparent border-purple-900 hover:shadow-lg hover:border-purple-600 transition duration-200"
             style={{ fontFamily: 'Anton' }}
           />
           <label
-            className={`absolute left-3 transition-all duration-200 transform ${focusEmail ? 'translate-y-[-1.5rem] scale-75 text-purple-800' : 'top-3 text-white text-lg'}`}
+            htmlFor="email"
+            className={`absolute left-3 transition-all duration-200 transform ${
+              email || focusEmail ? '-translate-y-7 text-purple-800' : 'top-3 text-white text-lg'
+            }`}
           >
             Email
           </label>
@@ -54,12 +64,16 @@ const ContactForm: React.FC = () => {
             name="message"
             rows={6}
             placeholder=" "
+            onChange={(e) => setMessage(e.target.value)}
             onFocus={() => setFocusMessage(true)}
             onBlur={() => setFocusMessage(false)}
-            className={`w-full p-3 mb-5 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 placeholder-transparent text-xl bg-transparent border-purple-900 hover:shadow-lg hover:border-purple-600 transition duration-200`}
+            className="w-full p-3 mb-5 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 placeholder-transparent text-xl bg-transparent border-purple-900 hover:shadow-lg hover:border-purple-600 transition duration-200"
           />
           <label
-            className={`absolute left-3 transition-all duration-200 transform ${focusMessage ? 'translate-y-[-1.5rem] scale-75 text-purple-800' : 'top-3 text-white text-lg'}`}  
+            htmlFor="message"
+            className={`absolute left-3 transition-all duration-200 transform ${
+             message || focusMessage ? '-translate-y-7  text-purple-800' : 'top-3 text-white text-lg'
+            }`}
           >
             Message
           </label>

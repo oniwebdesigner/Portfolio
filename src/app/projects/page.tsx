@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from 'react'
 import Cards from './Projects';
-import Projects from './Projects'
+import ScrollColorText from '../Animations/ScrollColorText';
 
 const imageData = [
   {
@@ -83,7 +83,10 @@ export default function Page() {
         </div>
         <button onClick={() => onClick("next")} className='bg-white text-black rounded-full min-w-12 h-12'>Next</button>
       </div>
-      
-    </div>
+      <div>
+
+      </div>
+      <ScrollColorText phrases={['Driven by a passion for excellence, I dedicate my skills and creativity to the finest details, believing that even the smallest touch has the power to create something remarkable and memorable.']} />
+      </div>
   );
 }

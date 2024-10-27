@@ -26,8 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/header/header.js",
+    "src/app/components/Animations",
     "src/app/projects/Projects.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules/gsap"]
 }

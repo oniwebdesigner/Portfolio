@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import gsap from 'gsap';
 
 export const textTypingAnimation = (
@@ -22,7 +23,10 @@ export const textTypingAnimation = (
       duration: sentence.length * 0.1,
       ease: "none",
       onUpdate: function () {
-        paragraphRef.current!.textContent = sentence.slice(0, Math.floor(this.progress() * sentence.length));
+        if(paragraphRef.current) {
+          paragraphRef.current.innerText = sentence.slice(0, Math.floor(this.progress() * sentence.length));
+        }
+    
       },
       onComplete: () => {
         

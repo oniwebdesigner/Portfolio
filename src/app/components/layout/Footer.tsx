@@ -31,7 +31,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-r from-indigo-700 via-purple-500 to-pink-500">
+    <div className="overflow-x-hidden relative bg-gradient-to-r from-indigo-700 via-purple-500 to-pink-500">
       <div 
         className="bottom-0 w-full h-[266px] bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url("${Background.src}")` }}
@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
 
       <div 
-        className="absolute bottom-0 left-[30%] w-[330px] h-[105px] bg-no-repeat bg-center bg-cover car" 
+        className="absolute bottom-0 w-[300px] h-[105px] bg-no-repeat bg-center bg-cover car" 
         style={{ backgroundImage: `url("${Volkswagen.src}")` }}
       >
       </div>
