@@ -60,8 +60,12 @@ export default function Page() {
   }
   return (
     <div>
-      <h1 className='text-6xl mt-2 font-medium text-purple-950 w-fit staggered-reveal'>My Projects</h1>
-      <h2 className='text-[1.65rem] font-medium md:max-w-lg w-full mt-2 staggered-reveal'>Some things I've built with love and expertise</h2>
+     <div className="flex flex-col items-center p-16 text-center">
+  <h1 className="text-6xl mt-2 font-medium text-purple-950 w-fit staggered-reveal mb-16">My Projects</h1>
+  <h2 className="text-[1.65rem] font-medium md:max-w-lg w-full mt-2 staggered-reveal">
+    Some things I've built with love and expertise
+  </h2>
+</div>
 
       <div className='flex items-center'>
         <button onClick={() => onClick("prev")} className='bg-white text-black rounded-full min-w-12 h-12'>Prev</button>

@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'first': 'first 22s linear infinite',
+        // 'first': 'first 22s linear infinite',
       },
       keyframes: {
         first: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
+          // '0%': { transform: 'translateX(0)' },
+          // '100%': { transform: 'translateX(100%)' },
         }
       }
     },

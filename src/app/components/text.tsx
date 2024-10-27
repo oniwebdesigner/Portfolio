@@ -1,13 +1,22 @@
-import React from 'react'
+// ExampleUsage.tsx
+import React from 'react';
+import ScrollColorText from '../Animations/ScrollColorText'; 
 
-export default function text() {
+const Text: React.FC = () => {
+  const textPhrases = [
+    "I am a passionate Engineer",
+    "who's focused on building",
+    "scalable and performant apps.",
+    "I take responsibility to craft",
+    "a good user experience using",
+    "modern frontend architecture."
+  ];
+
   return (
     <div>
-        <h1 className='text-5xl text-center py-10' style={{ fontFamily: 'Anton' }}>
-            I'am a passionate Engineer who's focused on building scalable and
-            performant apps. I take responsibility to craft a good user experienxe
-            using modern frontend artitechture.
-        </h1>
+      <ScrollColorText phrases={textPhrases} />
     </div>
-  )
-}
+  );
+};
+
+export default Text;

@@ -13,6 +13,7 @@ import Git from '../skills/git.svg';
 import Next from '../skills/nextjs.svg';
 import Vite from '../skills/vite.svg';
 import MySql from '../skills/mysql.svg';
+import Sanity from '../skills/sanity-io.svg';
 
 
 export default function Skills() {
@@ -23,7 +24,8 @@ export default function Skills() {
     { src: Nodejs.src, alt: 'Node' },
     { src : TypeScript.src, alt: 'TypeScript'},
     { src : Sass.src, alt: 'sass'},
-    { src : Vite.src, alt : 'vite'}
+    { src : Vite.src, alt : 'vite'},
+    { src : Sanity.src, alt : 'sanity'}
   ];
 
   const libraries = [
@@ -50,7 +52,7 @@ export default function Skills() {
         
         <div className="mt-10">
           <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-xl mb-4 staggered-reveal ml-16">
-           <b> LANGUAGES AND TOOLS </b>
+           LANGUAGES AND TOOLS
           </h3>
           <div className="flex gap-10 ml-16 mb-8">
             {skills.map((skill, index) => (
@@ -61,7 +63,7 @@ export default function Skills() {
 
         <div className="py-5">
           <h2 className="uppercase tracking-widest text-gray-light-2 font-medium text-xl staggered-reveal ml-16 mb-4">
-           <b> LIBRARIES AND FRAMEWORKS </b>
+           LIBRARIES AND FRAMEWORKS
           </h2>
           <div className="flex gap-10 ml-16 mb-8">
             {libraries.map((lib, index) => (
@@ -71,8 +73,8 @@ export default function Skills() {
         </div>
 
         <div className="py-5 flex flex-row gap-20 uppercase tracking-widest text-gray-light-2 font-medium text-xl staggered-reveal ml-16">
-          <h2> <b> Databases </b></h2>
-          <h2> <b> Others </b></h2>
+          <h2> Databases </h2>
+          <h2>  Others </h2>
         </div>
 
         <div className="flex flex-row gap-24 ml-20">
