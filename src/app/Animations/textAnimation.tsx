@@ -4,7 +4,7 @@ import gsap from 'gsap';
 export const textTypingAnimation = (
   paragraphRef: React.RefObject<HTMLSpanElement>,
   cursorRef: React.RefObject<HTMLSpanElement>,
-  extraTextRe:  React.RefObject<HTMLSpanElement>
+  //extraTextRe:  React.RefObject<HTMLSpanElement>
 ) => {
   if (!paragraphRef.current || !cursorRef.current) return;
 

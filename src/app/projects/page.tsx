@@ -4,12 +4,7 @@ import Cards from './Projects';
 import ScrollColorText from '../Animations/ScrollColorText';
 
 const imageData = [
-  {
-    src: "https://cdn.dribbble.com/userupload/3176037/file/original-3a3987a3c13aa0600ad39ef40ef366a5.png?resize=752x",
-    alt: "Project Image 1",
-    width: 500,
-    height: 300,
-  },
+  
   {
     src: "https://cdn.dribbble.com/userupload/3176037/file/original-3a3987a3c13aa0600ad39ef40ef366a5.png?resize=752x",
     alt: "Project Image 2",
@@ -86,7 +81,7 @@ export default function Page() {
       <div>
 
       </div>
-      <ScrollColorText phrases={['Driven by a passion for excellence, I dedicate my skills and creativity to the finest details, believing that even the smallest touch has the power to create something remarkable and memorable.']} />
+      <ScrollColorText phrases={["This version emphasizes your commitment to detail and excellence while connecting directly to your projects. If you need further adjustments or have specific points you'd like to highlight, let me know!"]} />
       </div>
   );
 }

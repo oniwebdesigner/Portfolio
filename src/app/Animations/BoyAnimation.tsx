@@ -1,4 +1,4 @@
-// boyAnimation.ts
+// boyAnimation.tsx
 import { gsap } from 'gsap';
 
 export const animateBoy = (boyRef: React.RefObject<HTMLImageElement>) => {
